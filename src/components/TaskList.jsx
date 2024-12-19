@@ -8,8 +8,7 @@ const TaskList = () => {
     status: "",
     dueDate: "",
   });
-
-  const filteredTasks = tasks.filter((task) => {
+  const filteredTasks = (Array.isArray(tasks) ? tasks : []).filter((task) => {
     let matches = true;
 
     if (filter.status) {
