@@ -42,10 +42,7 @@ const TaskForm = ({ task, onClose }) => {
       title: task?.title || '',
       description: task?.description || '',
       status: task?.status || 'Pending',
-      // dueDate: task?.dueDate || '',
-      dueDate: task?.dueDate
-      ? new Date(task.dueDate).toISOString().split('T')[0]  
-      : '',
+      dueDate: task?.dueDate || '',
     },
   });
 
