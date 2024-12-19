@@ -28,7 +28,7 @@ const TaskItem = ({ task }) => {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-md mb-4 border-2 border-red-600">
+    <div className="bg-white p-4 rounded-lg shadow-md mb-4 border-2 border-blue-400">
       <div className="flex justify-between ">
         <h3 className="text-lg font-bold">{task.title}</h3>
         <div className="flex flex-col sm:flex-row space-x-0 sm:space-x-2 space-y-2 sm:space-y-0">

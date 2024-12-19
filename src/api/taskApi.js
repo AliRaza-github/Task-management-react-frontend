@@ -4,7 +4,6 @@ import axios from 'axios';
 const API_URL = 'https://task-management-backend-node.vercel.app/tasks';
 
 
-
 export const fetchTasks = async () => {
   const response = await axios.get(API_URL);
   return response.data;
