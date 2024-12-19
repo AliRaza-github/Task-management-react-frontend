@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/tasks';
+// const API_URL = 'http://localhost:5000/tasks';
+const API_URL = process.env.API_BASE_URL;
 
 export const fetchTasks = async () => {
   const response = await axios.get(API_URL);
@@ -23,7 +24,7 @@ export const deleteTask = async (id) => {
 
 export const fetchTaskById = async (id) => {
   try {
-    const response = await fetch(`http://localhost:5000/tasks/${id}`);
+    const response = await fetch(`${API_URL}/${id}`);
     if (!response.ok) {
       throw new Error('Failed to fetch task.');
     }
