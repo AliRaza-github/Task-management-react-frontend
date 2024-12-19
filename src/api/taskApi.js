@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const API_URL = 'http://localhost:5000/tasks';
-const API_URL = 'https://task-management-backend-node.vercel.app/tasks/';
+const API_URL = 'https://task-management-backend-node.vercel.app/tasks';
 
 
 
